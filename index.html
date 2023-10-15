@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <h1>PokeAPI test</h1>
+
+    <div id="button-random-pokemon">
+        <button class="button-random-pokemon" onclick="randomPokemon()">Random Pokemon !!!</button>
+    </div>
 
     <div id="pokemon-info">
         <h2>Pokemon: <span id="pokemon"></span></h2>
         <p>Height: <span id="height"></span></p>
         <p>Weight: <span id="weight"></span></p>
         <p>Abilities: <span id="abilities"></span></p>
-        <img id="pokemon-image" src="" alt="Pikachu">
+        <p>Sprite:</p>
+        <img id="pokemon-image" src="" alt="randomPokemon">
+        <p>Official Artwork:</p>
+        <img id="pokemon-image2" src="" alt="randomPokemon">
     </div>
-    
-    <div id="button-random-pokemon">
-        <button onclick="randomPokemon()">Pokemon Aleatório !!!</button>
-    </div>
+
+    <footer>
+        &copy; 2023 Todos os direitos reservados |
+		<span>
+			Feito por Jorge Enrique
+		</span>
+    </footer>
 </body>
+
 </html>

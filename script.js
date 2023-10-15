@@ -2,7 +2,7 @@ const randomPokemon = () => {
 
     //Generate a random pokemon
     const randomPokemonID = () => {
-        const randomIDNumber = Math.floor(Math.random() * 300);
+        const randomIDNumber = Math.floor(Math.random() * 700);
         return randomIDNumber;
     }
 
@@ -21,6 +21,7 @@ const randomPokemon = () => {
             const weight = data.weight;
             const abilities = data.abilities.map(ability => ability.ability.name);
             const imgUrl = data.sprites.front_default;
+            const imgUrl2 = data.sprites.other['official-artwork'].front_default;
 
             // Update HTML elements with the retrieved data
             document.getElementById("pokemon").textContent = pokemon;
@@ -28,6 +29,7 @@ const randomPokemon = () => {
             document.getElementById("weight").textContent = weight;
             document.getElementById("abilities").textContent = abilities.join(", ");
             document.getElementById("pokemon-image").src = imgUrl;
+            document.getElementById("pokemon-image2").src = imgUrl2;
         })
         .catch(error => {
             // Handle any errors that occurred during the fetch

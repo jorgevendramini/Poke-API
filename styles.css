@@ -1,0 +1,44 @@
+h1{
+    font: 4em sans-serif;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+#pokemon-info{
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    font-size: 2em;
+    font-family: sans-serif;
+    border: 1px solid red;
+    background-color: lightblue;
+    align-items: flex-start;
+    height: 700px;
+}
+
+#pokemon-image, #pokemon-image2{
+    width: min-content;
+}
+
+#pokemon-info p, h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: -1.5px -0.5px 0 rosybrown;
+}
+
+#button-random-pokemon{
+    display: flex;
+    justify-content: center;
+}
+
+.button-random-pokemon{
+    height: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: aquamarine;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
